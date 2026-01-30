@@ -7,6 +7,9 @@ K-Means clustering for grouping similar digits.
 The main objective is to visualize how high-dimensional image data can be meaningfully
 represented and clustered in a 2D space.
 
+![image alt](https://github.com/DIVYANEELAPALA1205/Mnist_tsne_clustering/blob/83707bf1ebe7c150bdab42ad32b994a319842bf1/Screenshot%202026-01-30%20230017.png)
+
+
 📊 Dataset
 
 Dataset used: sklearn.datasets.load_digits()
@@ -22,76 +25,76 @@ True digit labels (0–9) are used only for evaluation, not for training.
 🧠 Methodology
 1. Data Preprocessing
 
--> Load handwritten digit images
+  -> Load handwritten digit images
 
--> Flatten image pixels into numerical vectors
+  -> Flatten image pixels into numerical vectors
 
 2. Dimensionality Reduction (t-SNE)
 
--> High-dimensional image data is reduced to 2D
+  -> High-dimensional image data is reduced to 2D
 
--> t-SNE preserves local similarity, making it ideal for visualization
+  -> t-SNE preserves local similarity, making it ideal for visualization
 
--> Used only for visualization, not prediction
+  -> Used only for visualization, not prediction
 
 3. Clustering (K-Means)
 
--> K-Means is applied on the 2D embeddings
+  -> K-Means is applied on the 2D embeddings
 
--> Number of clusters (k) is set to 10
+  -> Number of clusters (k) is set to 10
 
--> Each digit is assigned to a cluster based on similarity
+  -> Each digit is assigned to a cluster based on similarity
 
 4. Visualization
 
--> Interactive 2D scatter plot created using Plotly
+  -> Interactive 2D scatter plot created using Plotly
 
--> Each point represents a digit image
+  -> Each point represents a digit image
 
--> Points are color-coded by cluster
+  -> Points are color-coded by cluster
 
--> Hovering over a point shows:
+  -> Hovering over a point shows:
 
--> True digit label
+  -> True digit label
 
--> Assigned cluster
+  -> Assigned cluster
 
 📈 Cluster Analysis
 
--> The following metrics are used to evaluate clustering quality:
+  -> The following metrics are used to evaluate clustering quality:
 
--> Cluster size (number of samples per cluster)
+  -> Cluster size (number of samples per cluster)
 
--> Dominant digit in each cluster
+  -> Dominant digit in each cluster
 
--> Clustering accuracy (by mapping clusters to most frequent digit)
+  -> Clustering accuracy (by mapping clusters to most frequent digit)
 
--> Silhouette score to measure cluster separation
+  -> Silhouette score to measure cluster separation
 
--> Misclassified digits visualization to analyze overlaps between similar digits
+  -> Misclassified digits visualization to analyze overlaps between similar digits
 
 📌 Results & Observations
 
--> Clear cluster separation is visible in the 2D space
+  -> Clear cluster separation is visible in the 2D space
 
--> Most clusters align well with true digit labels
+  -> Most clusters align well with true digit labels
 
--> Some overlap occurs between visually similar digits (e.g., 3 and 5)
+  -> Some overlap occurs between visually similar digits (e.g., 3 and 5)
 
--> t-SNE effectively reveals structure in handwritten digit data
+  -> t-SNE effectively reveals structure in handwritten digit data
 
--> Clustering quality metrics indicate meaningful unsupervised grouping
+  -> Clustering quality metrics indicate meaningful unsupervised grouping
 
 ⚙️ Technologies Used
 
-1.Python
+  1.Python
 
-2.NumPy
+  2.NumPy
 
-3.Pandas
+  3.Pandas
 
-4.scikit-learn
+  4.scikit-learn
 
-5.Plotly
+  5.Plotly
 
-6.Matplotlib
+  6.Matplotlib
